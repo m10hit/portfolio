@@ -14,15 +14,15 @@ $(document).ready(function(){
         $("#div1").load(url)
     });
 
-    $(".about-home").click(function(){
+    $(".about-page").click(function(){
         var url = $(this).attr("id") + ".html"
         $("#div1").load(url)
-        $('a.nav-link').removeClass("blue-select");
-        $(".menu-about").addClass("blue-select");
+        $('a.nav-link').removeClass("btn btn-primary");
+        $(".menu-about").addClass("btn btn-primary");
     });
 
     $('a.nav-link').click(function(e){
-    $('a.nav-link').removeClass("blue-select");
-    $(this).addClass("blue-select");
+    $('a.nav-link').removeClass("btn btn-primary blue-select");
+    $(this).addClass("btn btn-primary");
 });
 });
