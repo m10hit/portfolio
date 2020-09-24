@@ -14,10 +14,15 @@ $(document).ready(function(){
         $("#div1").load(url)
     });
 
+    $(".menu-project").click(function(){
+        var url = $(this).attr("id") + ".html"
+        $("#div1").load(url)
+    });
+
     $(".about-page").click(function(){
         var url = $(this).attr("id") + ".html"
         $("#div1").load(url)
-        $('a.nav-link').removeClass("btn btn-primary");
+        $('a.nav-link').removeClass("btn btn-primary blue-select");
         $(".menu-about").addClass("btn btn-primary");
     });
 
